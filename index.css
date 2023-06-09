@@ -1,0 +1,125 @@
+@font-face {
+    font-family:"billabong" ;
+    src: url('FontsFree-Net-Billabong.ttf');
+}
+html, body {
+    margin: auto;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 400px;
+    background-color: #1d1c1c;
+}
+.user-avatar, .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.logo{
+    margin-left: 20px;
+    font-family: billabong;
+    color: white;
+}
+.gram-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(198, 198, 198, 1);
+    padding-top: 5px;
+    background-color: rgb(0, 0, 0); 
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px 0;
+}
+.name-location{
+    line-height: 5px;
+    margin-left: -10px;
+    color: white;
+}
+.name, .like, .handle{
+    font-size: 13px;
+    font-weight: 700;
+}
+.location, span{
+    font-size: 12px;
+    font-weight: 400;
+}
+.post{
+    width: 400px;
+    height: 300px;
+}
+.icon img{
+    width: 23.3px;
+    height: 25px;
+    margin: 15px 8px;
+    cursor: pointer;
+}
+.like-comment{
+    margin-left: 10px;
+    margin-top: -20px;
+    color: white;
+}
+.icon-section{
+    padding-bottom: 5px;
+}
+.chocho, .denki{
+    margin-top: 30px;
+}
+
+.like-icon {
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .like-icon:hover {
+    opacity: 0.5;
+  }
+  
+  .like-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/like-filled.png);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .like-icon.liked {
+    opacity: 1;
+  }
+  
+  .like-icon.liked::before {
+    opacity: 1;
+  }
+  
+  .like-icon.liked {
+    opacity: 1;
+    animation: bounce 0.3s ease;
+  }
+  
+  .like-icon.liked::before {
+    opacity: 1;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  section{
+    background-color: black;
+    margin-bottom: 30px;
+  }
